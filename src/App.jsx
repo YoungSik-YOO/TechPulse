@@ -5,12 +5,17 @@ import useAuthStore from './store/authStore';
 import LoadingSpinner from './components/common/LoadingSpinner';
 
 function App() {
+  console.log('App Rendering...');
   useAuthInit();
   const loading = useAuthStore((state) => state.loading);
+  console.log('App Loading State:', loading);
 
   if (loading) {
+    console.log('Rendering LoadingSpinner');
     return <LoadingSpinner />;
   }
+
+  console.log('Rendering AppRouter');
 
   return (
     <BrowserRouter>
