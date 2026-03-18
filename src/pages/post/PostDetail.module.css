@@ -1,0 +1,150 @@
+/* src/pages/post/PostDetail.module.css */
+.detailContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.backButton:hover {
+  color: var(--color-primary);
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.metaSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.authorBox {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.authorName {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-size: 1.1rem;
+}
+
+.postDate {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.editButton, .deleteButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.editButton {
+  border: 1px solid var(--color-border);
+  background: white;
+}
+
+.editButton:hover {
+  background: #f5f5f5;
+}
+
+.deleteButton {
+  border: 1px solid #ff4d4f;
+  color: #ff4d4f;
+  background: transparent;
+}
+
+.deleteButton:hover {
+  background: #fff1f0;
+}
+
+.tagList {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: 20px;
+  background-color: #e6f7ff;
+  color: #1890ff;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.contentBody {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 48px;
+}
+
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: 24px;
+}
+
+.stats {
+  display: flex;
+  gap: 24px;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.commentNotice {
+  margin-top: 24px;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
